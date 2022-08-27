@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
 
 	mpca_lang(MPCA_LANG_DEFAULT,
 	    "                                                                \
-		decimal   : /-?[0-9]+\.[0-9]+/ ;                             \
+		decimal   : /-?[0-9]+\\.[0-9]+/ ;                             \
 	        whole     : /-?[0-9]+/ ;                                     \
 	        number    : <decimal> | <whole> ;                            \
 		operator  : '+' | '-' | '*' | '/' | '%'                      \
