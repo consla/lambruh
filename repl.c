@@ -69,6 +69,9 @@ int main(int argc, char** argv) {
 	
 	for (;;) {
 		char* input = readline("lambruh=> ");
+		if (&input[0] == '\0') {
+			break;
+		}
 		add_history(input);
 
 		mpc_result_t r;
