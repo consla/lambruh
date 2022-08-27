@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
 		operator  : '+' | '-' | '*' | '/' | '%'                      \
 		          | \"add\" | \"sub\" | \"mul\" | \"div\" ;          \
 		exp       : <number> | '(' <operator> <exp>+ ')' ;           \
-		lambruh   : /^/<exp>+/$/ ;                                   \
+		lambruh   : /^/<exp>*/$/ ;                                   \
 	    ", Decimal, Whole, Number, Operator, Exp, Lambruh);
 
 	// mpca_lang(MPCA_LANG_DEFAULT,
